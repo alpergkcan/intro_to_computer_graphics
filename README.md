@@ -2,12 +2,12 @@
 My Projects on Computer Graphics including the METU Ceng 477 Course and personal projects.
   
   + Ray Tracer 
-    + ./raytracer ./path-to-scene-file.xml
+    + `./raytracer ./path-to-scene-file.xml`
   + Forward Rendering Pipeline (Rasterizer)
-    + ./rasterizer ./path-to-scene-file.xml 
+    + `./rasterizer ./path-to-scene-file.xml` 
   + OpenGL Earth and Moon Application
     + This application is written for Linux operating systems.
-    + ./hw3 ./path-to-moon-texture.jpg ./path-to-hightmap.jpg ./path-to-earth-texture.jpg
+    + `./hw3 ./path-to-moon-texture.jpg ./path-to-hightmap.jpg ./path-to-earth-texture.jpg`
   
 #
 # Sample Images
