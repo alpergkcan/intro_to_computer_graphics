@@ -35,7 +35,7 @@ My Projects on Computer Graphics including the METU Ceng 477 Course and personal
     +  \
       ![horse_and_mug_2.png](/images/frp_horse_and_mug_2.png)      
       
-  + OpemGL Application
+  + OpenGL Application
     +  \
       ![](/images/)
 
