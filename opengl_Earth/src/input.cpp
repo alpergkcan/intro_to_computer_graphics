@@ -1,8 +1,8 @@
 #include "input.h"
 
-#include "../libraries/include/GLFW/glfw3.h"
-#include "../libraries/include/glm/glm.hpp"
-#include "../libraries/include/glm/ext.hpp"
+#include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
+#include <glm/ext.hpp>
 
 #include "variables.h"
 
@@ -28,7 +28,7 @@ void Input::KeyboardInput() {
 	Variables* I  = Variables::I;
 	Input*     In = Input::I;
 
-	
+
 	// Heightmap
     if( In->getKey(GLFW_KEY_R) )
 		I->heightFactor+=10;
@@ -83,5 +83,5 @@ void Input::KeyboardInput() {
 		I->right = glm::normalize(glm::cross(I->up, I->gaze));
 		I->up    = glm::normalize(glm::cross(I->gaze, I->right));
 	}
-	
+
 }

@@ -19,4 +19,4 @@ add_executable(hw3
 
 target_include_directories( hw3 PRIVATE ../libraries/include/ )
 target_link_directories   ( hw3 PRIVATE ../libraries/lib/ )
-target_link_libraries     ( hw3 PRIVATE dl glfw3 X11 pthread jpeg )
+target_link_libraries     ( hw3 PRIVATE dl glfw3 X11 Xinerama Xcursor Xxf86vm Xrandr pthread jpeg )

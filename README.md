@@ -1,17 +1,17 @@
 # ComputerGraphics
 My Projects on Computer Graphics including the METU Ceng 477 Course and personal projects.
-  
+
   + **Ray Tracer**
     + `./raytracer ./path-to-scene-file.xml`
   + **Forward Rendering Pipeline (Rasterizer)**
-    + `./rasterizer ./path-to-scene-file.xml` 
+    + `./rasterizer ./path-to-scene-file.xml`
   + **OpenGL Earth and Moon Application**
     + This application is written for Linux operating systems.
     + `./hw3 ./path-to-moon-texture.jpg ./path-to-hightmap.jpg ./path-to-earth-texture.jpg`
-  
+
 #
 # Sample Images
-  + RayTracer 
+  + RayTracer
     +  \
       ![dragon.png](/images/rt_dragon.png)
     +  \
@@ -34,14 +34,14 @@ My Projects on Computer Graphics including the METU Ceng 477 Course and personal
       ![horse_and_mug_1.png](/images/frp_horse_and_mug_1.png)
     +  \
       ![horse_and_mug_2.png](/images/frp_horse_and_mug_2.png)      
-      
+
   + OpenGL Application
     +  \
-      ![](/images/)
+      ![hw3.png](/images/hw3.png)
 
 
 #
 This repository is generated only for the purpose of creating a digital portfolio. Some parts
-of the code does not belong to me since these projects were initially started from a existing 
-code templete. Some of the implementations of these algorithms are written with the input object 
+of the code does not belong to me since these projects were initially started from a existing
+code templete. Some of the implementations of these algorithms are written with the input object
 constraints, therefore the code may not work properly for certain situations.

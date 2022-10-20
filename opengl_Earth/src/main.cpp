@@ -1,13 +1,13 @@
 #include <iostream>
 #include "../libraries/include/glad/glad.h"
-#include "GLFW/glfw3.h"
+#include <GLFW/glfw3.h>
 #include "window.h"
 #include "shader.h"
 #include "Sphere.h"
 
-#include "../libraries/include/glm/glm.hpp"
-#include "../libraries/include/glm/matrix.hpp"
-#include "../libraries/include/glm/ext.hpp"
+#include <glm/glm.hpp>
+#include <glm/matrix.hpp>
+#include <glm/ext.hpp>
 #include "variables.h"
 
 #include "texture.h"
@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
 	I->eye = glm::vec3(0, 4000, 4000);
 	I-> up = glm::vec3(0,    0,    1);
 	I->axialTurnFactor = 0.002f;
-	
+
 	I->gaze  = glm::normalize(glm::vec3(0, -1, -1));
 	I->right = glm::normalize(glm::cross(I->up, I->gaze));
 	I->up    = glm::normalize(glm::cross(I->gaze, I->right));
@@ -38,7 +38,7 @@ int main(int argc, char** argv) {
 	Texture earthTexture(argv[2], I->earthS.ID, "TexColor", 0);
 	Texture heightMap   (argv[1], I->earthS.ID, "TexGrey",  1);
 	Texture moonTexture (argv[3],  I->moonS.ID, "MoonTexColor", 0);
-	
+
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_MULTISAMPLE);
     glPolygonMode(GL_FRONT, GL_FILL);
@@ -65,15 +65,13 @@ int main(int argc, char** argv) {
 		I->DrawEarth();
 
 		In->KeyboardInput();
-			
+
         glfwSwapBuffers(Window::window);
         glfwPollEvents();
         I->iteration++;
 	}
 
-	
+
     glfwTerminate();
     return 0;
 }
-
-

@@ -4,9 +4,9 @@
 
 #ifndef HW3_PROJ_VARIABLES_H
 #define HW3_PROJ_VARIABLES_H
-#include "../libraries/include/glm/ext.hpp"
-#include "../libraries/include/glm/matrix.hpp"
-#include "../libraries/include/glm/glm.hpp"
+#include <glm/ext.hpp>
+#include <glm/matrix.hpp>
+#include <glm/glm.hpp>
 #include "shader.h"
 #include "Sphere.h"
 
@@ -30,15 +30,15 @@ public:
 	glm::mat4 vp;
 
 	glm::mat4 Identity = glm::mat4(1);
-	
+
 	Shader moonS = Shader("rsrc/shader/moon.vert", "rsrc/shader/moon.frag");
 	Shader earthS = Shader("rsrc/shader/earth.vert", "rsrc/shader/earth.frag");
-	
+
 	Sphere moon = Sphere(162);
 	Sphere earth = Sphere(600);
-	
+
 	glm::mat4 mvp_earth, mvp_moon;
-	
+
     float heightFactor = 80;
 	float axialTurnFactor = 0.5f/250;
 	float turnAngle = -0.05f;
@@ -47,8 +47,8 @@ public:
 
 	void DrawMoon();
 	void DrawEarth();
-	
-	
+
+
 
 public:
 	Variables();
