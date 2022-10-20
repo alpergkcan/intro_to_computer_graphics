@@ -7,7 +7,7 @@ My Projects on Computer Graphics including the METU Ceng 477 Course and personal
     + `./rasterizer ./path-to-scene-file.xml`
   + **OpenGL Earth and Moon Application**
     + This application is written for Linux operating systems.
-    + `./hw3 ./path-to-moon-texture.jpg ./path-to-hightmap.jpg ./path-to-earth-texture.jpg`
+    + `./hw3 ./path-to-moon-texture.jpg ./path-to-earth-texture.jpg ./path-to-hightmap.jpg`
 
 #
 # Sample Images
@@ -36,6 +36,7 @@ My Projects on Computer Graphics including the METU Ceng 477 Course and personal
       ![horse_and_mug_2.png](/images/frp_horse_and_mug_2.png)      
 
   + OpenGL Application
+    + Controls: 'w/s' rotate plane, 'r/f' height scaling, 'y/h' add speed, 'x' stop
     +  \
       ![hw3.png](/images/hw3.png)
 
